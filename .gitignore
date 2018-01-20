@@ -1,0 +1,5 @@
+bazel-cargo-raze-crater
+bazel-bin
+bazel-genfiles
+bazel-out
+bazel-testlogs
