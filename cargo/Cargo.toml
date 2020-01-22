@@ -142,3 +142,9 @@ additional_flags = [
 additional_flags = [
   "--cfg='extprim_channel=\\\"unstable\\\"'"
 ]
+
+[raze.crates.miniz-sys.'0.1.10']
+gen_buildrs = true
+
+[raze.crates.backtrace-sys.'0.1.16']
+gen_buildrs = true
