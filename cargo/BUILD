@@ -5,6 +5,9 @@ DO NOT EDIT! Replaced on runs of cargo-raze
 """
 package(default_visibility = ["//visibility:public"])
 
+licenses([
+  "notice" # See individual crates for specific licenses
+])
 alias(
     name = "aho_corasick",
     actual = "@raze__aho_corasick__0_6_4//:aho_corasick",
