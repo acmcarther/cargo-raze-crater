@@ -167,4 +167,7 @@ genrule(
         cp -Lr $${OPENSSL_ROOT}/include/openssl/*.h $(@D)/include/openssl/. 
     """,
     local = 1,
+    toolchains = [
+        "@bazel_tools//tools/cpp:current_cc_host_toolchain",
+    ],
 )
