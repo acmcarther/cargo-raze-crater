@@ -3,8 +3,10 @@ workspace(name = "cargo_raze_crater")
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 RUST_RULES_COMMIT_SHA = "5a679d418955a122798f42c7bb67c55ca68a2493"
+
 http_archive(
     name = "io_bazel_rules_rust",
+    sha256 = "a989f51be9f1a93d0d662af3ada646531278e4f1c5b250ce84dd46558b01eda2",
     strip_prefix = "rules_rust-{}".format(RUST_RULES_COMMIT_SHA),
     urls = [
         "https://github.com/bazelbuild/rules_rust/archive/{}.zip".format(RUST_RULES_COMMIT_SHA),
